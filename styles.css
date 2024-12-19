@@ -25,6 +25,7 @@
 body{
   background-color: var(--Stone-100);
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 1800px
@@ -148,8 +149,8 @@ td:nth-child(2){
 }
 
 .attribution{
-  position: fixed;
-  bottom: 32px;
+  position: absolute;
+  bottom: 15px;
   text-align: center;
 }
 
@@ -179,5 +180,9 @@ td:nth-child(2){
   
   main:first-child{
     padding: 0px
+  }
+
+  .attribution{
+    display: none;
   }
 }
