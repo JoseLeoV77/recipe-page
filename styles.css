@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  font-size: 16px;
+}
+
+body{
+  background-color: var(--Stone-100);
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  min-height: 1180px;
+  max-width: 680px;
+  background-color: var(--White);
+  color: var(--Stone-600);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 24px;
+  border-radius: 24px;
+  gap: 24px;
+  margin:48px
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-gap{
+  gap: 16px;
+}
+
+.summary-title{
+  font-family: "Young Serif", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--Stone-900);
+  line-height: 36px;
+}
+
+summary p{
+  text-align: justify;
+  padding-right: 16px;
+}
+
+.recipe{
+  color: var(--Brown-800);
+  font-family: "Youg Serif", serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.prep-section{
+  padding: 24px 24px;
+  background-color: var(--Rose-50);
+  border-radius: 8px;
+  gap: 8px;
+}
+
+.prep-header{
+  color: var(--Rose-800);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+ul, ol{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li{
+  margin-left: 24px;
+  padding-left: 14px;
+}
+
+li::marker{
+  color:var(--Brown-800);
+  font-size: 12px;
+}
+
+.prep-time::marker{
+  color: var(--Rose-800);
+}
+
+
+.instruction-list::marker{
+  font-size:initial;
+  font-weight: 700;
+}
+
+.top-line{
+  padding-top: 24px;
+  border-top: 1px solid var(--Stone-150);
+}
+
+table{
+  border-collapse: collapse;
+}
+
+
+tr:not(.last){
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+td{
+  text-align: start;
+  padding: 18px;
+}
+
+td:nth-child(1){
+  padding-left: 32px;
+}
+
+td:nth-child(2){
+  padding-right: 24px;
+  font-weight: 700;
+  color: var(--Brown-800);
+}
+
+.attribution{
+  position: fixed;
+  bottom: 32px;
+  text-align: center;
+}
+
+@media (width <= 430px){
+  
+  main{
+    margin:0px;
+  }
+  
+  section{
+    width: 85%;
+  }
+  
+  .recipe-title{
+    align-self: center;
+  }
+
+  .prep-section{
+    width: 85%;
+  }
+  
+  main:first-child{
+    padding: 0px
+  }
+
+  table{
+    margin-bottom: 32px
+  }
+
+}
