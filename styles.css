@@ -26,10 +26,12 @@ body{
   background-color: var(--Stone-100);
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 1800px
 }
 
 main{
-  min-height: 1180px;
+  min-height: 1600px;
   max-width: 680px;
   background-color: var(--White);
   color: var(--Stone-600);
@@ -39,7 +41,7 @@ main{
   padding: 24px 24px;
   border-radius: 24px;
   gap: 24px;
-  margin:48px
+  margin:48px;
 }
 
 img{
@@ -60,7 +62,7 @@ section{
 
 .summary-title{
   font-family: "Young Serif", serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   color: var(--Stone-900);
   line-height: 36px;
@@ -73,9 +75,9 @@ summary p{
 
 .recipe{
   color: var(--Brown-800);
-  font-family: "Youg Serif", serif;
+  font-family: "Young Serif", serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .prep-section{
@@ -87,7 +89,7 @@ summary p{
 
 .prep-header{
   color: var(--Rose-800);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -126,7 +128,6 @@ table{
   border-collapse: collapse;
 }
 
-
 tr:not(.last){
   border-bottom: 1px solid var(--Stone-150);
 }
@@ -156,6 +157,12 @@ td:nth-child(2){
   
   main{
     margin:0px;
+    min-height: 100%;
+    border-radius: 0%;
+  }
+
+  img{
+    border-radius: 0%;
   }
   
   section{
@@ -173,9 +180,4 @@ td:nth-child(2){
   main:first-child{
     padding: 0px
   }
-
-  table{
-    margin-bottom: 32px
-  }
-
 }
