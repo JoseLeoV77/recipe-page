@@ -31,7 +31,7 @@ body{
 }
 
 main{
-  min-height: 1600px;
+  min-height: 1560px;
   max-width: 680px;
   background-color: var(--White);
   color: var(--Stone-600);
